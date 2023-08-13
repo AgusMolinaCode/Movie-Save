@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes swipe {
+  0%,
+  100% {
+    transform: translateX(0%) rotate(0deg); /* Cambia el valor de translateX y agrega rotate */
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0%) rotate(25deg); /* Cambia el valor de translateX y agrega rotate */
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.animate-swipe {
+  animation: swipe 1s infinite;
+}
+
+.max {
+  max-width: 100%;
+}
+
+.paused {
+  animation-play-state: paused;
+}

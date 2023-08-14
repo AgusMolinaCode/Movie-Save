@@ -1,5 +1,5 @@
 ## Movie-Save
-### Proyecto creado en Next.js 13, Tailwind, Tanstack-Query, Drag&Drop, Clerk Auth
+### Proyecto creado en Next.js 13, Typescript, Tailwind, Tanstack-Query, Drag&Drop, Clerk Auth
 
 #### En este proyecto puedes guardar tus peliculas favoritas, y utilizar drag&drop para organizar que pelicuals queres ver, cual estas mirando y cual terminaste de ver. Puedes buscar tus peliculas favoritas y en el menu principal tiene las peliculas del momento, tambien puedes visualizar toda la informacion de tu artista preferido y sus mejores peliculas, espeor te guste mi proyecto, ENJOY!
 

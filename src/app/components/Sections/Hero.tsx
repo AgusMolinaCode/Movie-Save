@@ -9,7 +9,6 @@ import Trailer from "../Trailers/Trailer";
 import Search from "./Search";
 import Modal from "./Modal";
 import FavoriteButton from "../UI/FavoriteButton";
-import { useState } from "react";
 
 export interface Data {
   page: number;
@@ -46,7 +45,6 @@ export enum OriginalLanguage {
 }
 
 const Hero = () => {
-  const [cargando, setCargando] = useState(true);
   const options = {
     method: "GET",
     headers: {
@@ -125,12 +123,7 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          {isLoading && (
-            <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-50 flex justify-center items-center">
-              <h1 className="text-white text-4xl font-bold">Loading...</h1>
-            </div>
-          )}
-          <div onLoad={() => setCargando(false)}>
+          <div>
             <CardTilt
               image={`https://image.tmdb.org/t/p/original${randomMovie?.backdrop_path}`}
             />

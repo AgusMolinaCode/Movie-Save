@@ -8,6 +8,7 @@ import PeopleMovies from "@/app/components/Characters/PeopleMovies";
 import { BiSolidStar } from "react-icons/bi";
 import ImagePeople from "@/app/components/Characters/ImagePeople";
 import { useState, useEffect } from "react";
+import { notFound } from "next/navigation";
 
 interface Props {
   params: {
@@ -73,13 +74,7 @@ const Page = ({ params }: Props) => {
     );
   }
   if (isError) {
-    return (
-      <div className="flex justify-center items-center mx-auto">
-        <h1 className="text-white text-4xl font-bold absolute inset-0 flex items-center justify-center">
-          Error...
-        </h1>
-      </div>
-    );
+    notFound();
   }
 
   const popular = Math.floor(data?.popularity || 0);

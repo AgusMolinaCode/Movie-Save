@@ -37,7 +37,7 @@ const MenuLinks = () => {
               <div className="flex justify-center items-center gap-2">
                 <SignedIn>
                   <Link
-                    className={`text-white block font-medium text-md md:text-xl ${
+                    className={`text-white flex font-medium text-md md:text-xl ${
                       router === "/favoritos"
                         ? "underline underline-offset-1"
                         : ""

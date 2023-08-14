@@ -45,7 +45,7 @@ const Gender = ({ id }: { id: number }) => {
   return (
     <div className="mt-5 flex flex-wrap justify-center mx-auto">
       {data?.map((gender) => (
-        <span className="text-gray-300 text-xl mr-4" key={gender.id}>
+        <span className="text-gray-300 text-lg mr-4" key={gender.id}>
             |{' '}
             {gender.name} 
             
